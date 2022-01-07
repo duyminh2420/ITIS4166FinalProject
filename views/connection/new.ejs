@@ -1,0 +1,76 @@
+<%- include('../partials/header.ejs')%>
+    <!-- Forms -->
+    <div id="form">
+    <!-- <div class="container-fluid"> -->
+        <form class="content" action="/connection" method="POST">
+          <div class="row mb-3">
+            <label class="col-sm-2 col-form-label">Topic</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" placeholder="topic" type="text" id="topic" name="topic" >
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <label class="col-sm-2 col-form-label" for = "id">id</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" placeholder="id" id ="id" name = "id">
+            </div>
+          </div>
+  
+          <div class="row mb-3">
+            <label class="col-sm-2 col-form-label" for = "name">Name</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" placeholder="name" id ="name" name = "name">
+            </div>
+          </div>
+  
+          <div class="row mb-3">
+            <label class="col-sm-2 col-form-label" for ="hostname">Host</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" placeholder="hostname" id ="hostname" name = "hostname">
+            </div>
+          </div>
+  
+          <div class="row mb-3">
+            <label class="col-sm-2 col-form-label" for="details">Details</label>
+            <div class="col-sm-10">
+              <textarea name="details" class="form-control" rows="8" cols="80" placeholder="description"></textarea>
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <label for="when" class="col-sm-2 col-form-label">Date</label>
+            <div class="col-sm-10">
+              <input type="date" class="form-control" name="date" required>
+            </div>
+          </div>
+  
+          <div class="row mb-3">
+            <label for="start" class="col-sm-2 col-form-label">Start</label>
+            <div class="col-sm-10">
+              <input type="time" class="form-control" name="startTime" required>
+            </div>
+          </div>
+    
+          <div class="row mb-3">
+            <label for="end" class="col-sm-2 col-form-label">End</label>
+            <div class="col-sm-10">
+              <input type="time" class="form-control" name="endTime" required>
+            </div>
+          </div>
+  
+          <div class="row mb-3">
+            <label class="col-sm-2 col-form-label" for="image">Image URL</label>
+            <div class="col-sm-10">
+              <input type="" class="form-control" placeholder="imageURL" id="image" name="image">
+            </div>
+          </div>
+  
+          <div class="col-lg-12 form-btn">
+            <button type="submit" class="btn btn-light">Create Connection</button>
+          </div>
+        </form>
+      </div>
+    <!-- </div> -->
+</div>
+<%- include('../partials/footer.ejs')%>

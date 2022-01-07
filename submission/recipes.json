@@ -1,0 +1,83 @@
+[{
+  "_id": {
+    "$oid": "6185da6aea89cd7d97ba39fc"
+  },
+  "name": "Banh my",
+  "topic": "Vietnamese cuisine",
+  "details": "This airy Vietnamese baguette is made with a combination of wheat and rice flours with a thin crispy crust. It is filled with pork, pâté, cured ham and a variety of cold cuts.",
+  "date": "2001-09-09",
+  "startTime": "22:20",
+  "endTime": "13:20",
+  "hostname": "Tom",
+  "image": "/images/banhmy.jpeg",
+  "createdAt": {
+    "$date": "2021-11-06T01:29:14.144Z"
+  },
+  "updatedAt": {
+    "$date": "2021-11-19T21:30:17.245Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6185dbf87c54316e146f4695"
+  },
+  "name": "Banh Chung",
+  "topic": "Vietnamese cuisine",
+  "details": "Bánh chưng is a traditional Vietnamese food which is made from glutinous rice, mung beans, pork and other ingredients. Bánh chưng and bánh giầy symbolized, respectively, the earth and the sky.",
+  "date": "10/22/2021",
+  "startTime": "7:00PM",
+  "endTime": "9:00PM",
+  "hostname": "Diamond Nguyen",
+  "image": "/images/banhchung.jpeg",
+  "updatedAt": {
+    "$date": "2021-11-19T21:20:48.351Z"
+  }
+},{
+  "_id": {
+    "$oid": "6185dc907c54316e146f4696"
+  },
+  "name": "Lang Van Restaurant",
+  "topic": "Vietnamese restaurant",
+  "details": "If you have been in Charlotte long enough, you may already know the story of Dan Nguyen and Lang Van: Born in South Vietnam, Nguyen married her husband, Tuyen Tran, at 20.",
+  "date": "02/22/2021",
+  "startTime": "9:00PM",
+  "endTime": "10:00PM",
+  "hostname": "Krista Nguyen",
+  "image": "/images/langvan.jpeg"
+},{
+  "_id": {
+    "$oid": "6185dcf67c54316e146f4697"
+  },
+  "name": "Banh My Brother",
+  "topic": "Vietnamese restaurant",
+  "details": "Banh Mi Brothers is a family-friendly, casual eatery. Pop in and grab a couple of banh mi to go, or join us, have a beer and give our innovative,",
+  "date": "12/02/2021",
+  "startTime": "7:00PM",
+  "endTime": "12:00PM",
+  "hostname": "Donnie Nguyen",
+  "image": "/images/banhmybrother.jpeg"
+},{
+  "_id": {
+    "$oid": "6185dd537c54316e146f4698"
+  },
+  "name": "Pho Hoa",
+  "topic": "Vietnamese restaurant",
+  "details": "Pho Hoa has been a staple for my family every time we visit Charlotte; I have been coming here since I was little and I was surprised that the inside of the place hasnot changed at all!",
+  "date": "07/07/2021",
+  "startTime": "7:00PM",
+  "endTime": "10:00PM",
+  "hostname": "Danny Dang",
+  "image": "/images/phohoa.jpeg"
+},{
+  "_id": {
+    "$oid": "6185debb7c54316e146f4699"
+  },
+  "name": "Pho",
+  "topic": "Vietnamese cuisine",
+  "details": "\"Pho is Vietnams unofficial national dish, exported with pride all over the world. Pho consists of flat rice noodles in a light, meat-based broth.\"",
+  "date": "05/05/2021",
+  "startTime": "10:10",
+  "endTime": "00:10",
+  "hostname": "Duy Minh Pham",
+  "image": "/images/pho.jpeg"
+}]

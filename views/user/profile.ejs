@@ -1,0 +1,64 @@
+<%- include('../partials/header.ejs')%>
+<div class = "content">
+    <h2>Welcome, <%=user.firstName%></h2>
+    <%if(connections.length) { %>
+        <p>You have created the following stories</p>
+        <table class = 'table'>
+            <thead class ='thead-dark'>
+                <tr>
+                    <th>Connection name</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <%connections.forEach(connection => {%>
+                    <tr>
+                        <td><%=connection.name%></td>
+                        <td><a href="/connection/<%= connection.id%>/edit" class ="btn btn-primary">Update</a></td>
+                        <td><a href="/connection/<%= connection.id%>/rsvp?_method=DELETE" class ="btn btn-danger">Delete</a></td>
+                    </tr>
+                <%});%>
+            </tbody>
+        </table>
+
+    <%} else {%>
+        <p>You have not created any connections</p>
+    <%}%>
+
+
+    <%if(rsvps.length) { %>
+        <p>You have RSVPS'd the following connections</p>
+        <table class = 'table'>
+            <thead class ='thead-dark'>
+                <tr>
+                    <th>Connection name</th>
+                    <th>RSVP status</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <%rsvps.forEach(rsvp => {%>
+                    <tr>
+                        <td><%=rsvp.connection.name%></td>
+                        <td><%=rsvp.rsvp%></td>
+                        <form>
+                            <td><button formmethod="get" formaction="/connection/<%= rsvp.connection.id%>/" class ="btn btn-primary">Update</button></td>
+                            <td><button formmethod="post" formaction="/connection/<%= rsvp.connection.id%>/rsvp?_method=DELETE" class ="btn btn-danger">Delete</button></td>
+                        </form>
+                    </tr>
+                <%});%>
+            </tbody>
+        </table>
+
+    <%} else {%>
+        <p>You have not created any connections</p>
+    <%}%>
+
+
+
+    </div>
+    <%- include('../partials/footer.ejs')%>

@@ -1,0 +1,31 @@
+<%- include('../partials/header.ejs')%>
+<section class="white-section" id="Menu">
+    <div class="container-fluid">
+      <h2 class="section-heading">Select your recipe or restaurant</h2>
+      <!-- New -->
+      <div class="row">
+        <%if(connections.length) {%>  
+            <%connections.forEach(connection=>{%>
+        <div class="Menu-column col-lg-4 col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <h3><%=connection.name%></h3>
+            </div>
+            <div class="card-body">
+              <img class="card-image" src="<%=connection.image%>" width="250" alt="PHO">
+              <p><%=connection.details%></p>
+              <!-- The dish is usually accompanied by basil, lime, chili, and other extras on the side so that eaters can season the soup to their own taste. -->
+              <a href="/connection/<%=connection.id%>" class="btn btn-lg btn-block btn-dark" role="button" aria-pressed="true">View recipe</a>
+            </div>
+          </div>
+        </div>
+        <%});%>
+        <%} else {%>
+            <p>There are no story to display.</p>
+        <%}%>
+
+
+      </div>
+    </div>
+  </section>
+  <%- include('../partials/footer.ejs')%>

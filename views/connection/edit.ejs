@@ -1,0 +1,30 @@
+<%- include('../partials/header.ejs')%>
+<div class = "form-container">
+    <form method = "POST" action = "/connection/<%=connection.id%>?_method=PUT">
+        <table>
+            <tr>
+                <td><label for="name" >name</label></td>
+                <td><input type="text" id="name" name="name" value = "<%= connection.name%>" class = "fixed-width"></td>
+            </tr>
+            <tr>
+                <td><label for="topic" >topic</label></td>
+                <td><input type="text" id="topic" name="topic" value = "<%= connection.topic%>" class = "fixed-width"></td>
+            </tr>
+            <tr>
+                <td><label for="hostname" >hostname</label></td>
+                <td><input type="text" id="hostname" name="hostname" value = "<%= connection.hostname%>" class = "fixed-width"></td>
+            <tr>
+                <td class = "align-top"><label for="content">details</label></td>
+                <td><textarea rows="5" id="details" name="details" class = "fixed-width"><%= connection.details%></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="image" >image</label></td>
+                <td><input type="text" id="image" name="image" value = "<%= connection.image%>" class = "fixed-width"></td>
+            <tr>
+                <td colspan="2" class = "align-right"><button>Submit</button></td>
+            </tr>
+        </table>       
+    </form>
+
+    </div>
+    <%- include('../partials/footer.ejs')%>

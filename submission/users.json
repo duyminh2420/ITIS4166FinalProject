@@ -1,0 +1,89 @@
+[{
+  "_id": {
+    "$oid": "617b4e5376f7281a8b350ee3"
+  },
+  "firstName": "amy",
+  "lastName": "nguyen",
+  "email": "amy@gmail.com",
+  "password": "123",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "617b53f2fea8771c20fa91ba"
+  },
+  "firstName": "Minh",
+  "lastName": "Pham",
+  "email": "Minh@gmail.com",
+  "password": "Minh",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "617b54829629e41c5bfb6378"
+  },
+  "firstName": "Pham",
+  "lastName": "Nguyen",
+  "email": "Nguyen@gmail.com",
+  "password": "hello",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "617b5500fb35161ca72fc40b"
+  },
+  "firstName": "123",
+  "lastName": "12345",
+  "email": "123@gmail.com",
+  "password": "Hello123",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "617b568684afac1d16c60106"
+  },
+  "firstName": "123",
+  "lastName": "1234",
+  "email": "123467889@gmail.com",
+  "password": "$2b$10$9O7xTieMDMYLZkLuY3jahOCuMBUWUeuupjevM6Pckllw9qEBgP4Iq",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "617b5964e357381d9e808fb3"
+  },
+  "firstName": "Misa",
+  "lastName": "Tran",
+  "email": "Misa@gmail.com",
+  "password": "$2b$10$uqkKGgbW4Weuexah6yUm3.X1TyTSFgjiKxPzJLxchLWoSJarpAITy",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "617b5a21a83d241df473fdbd"
+  },
+  "email": "wer@gmail.com",
+  "password": "$2b$10$t.G2QCgOAubSn4fHQSiUDO2T8Y.rSHTbPaxl6SEq61URP0PjPBDhG",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "617c96803e84571565ac2ad5"
+  },
+  "firstName": "hello",
+  "lastName": "123",
+  "email": "1223@gmail.com",
+  "password": "$2b$10$nAns1dvyDI2UZ7A3Ehcmw.lrquWIqatZeJ/iRw1fJZOVDHAf9Tq0S",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "617ca87a9bd8881977760fcb"
+  },
+  "firstName": "minh",
+  "lastName": "minh",
+  "email": "minh@gmail.com",
+  "password": "$2b$10$ECY0A2K1u33BrTMOvExaDuvPIxofP1m8NT1wT.gU6ugK/1WaOpndm",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61970d82b0d7011165d6e6f8"
+  },
+  "firstName": "duyminh",
+  "lastName": "duyminh",
+  "email": "duyminh@gmail.com",
+  "password": "$2b$10$dbtR.ZWBJ225f32tIAacKeGoBiMsWcUfSMY4miqitQIa.dqBLYtDO",
+  "__v": 0
+}]

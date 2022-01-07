@@ -1,0 +1,41 @@
+<%- include('../partials/header.ejs')%>
+
+  <!-- Forms -->
+  <div class="form-container">
+    <form class="" action="/users" method="POST">
+        <div class="row mb-3">
+            <label for="firstName" class="col-sm-2 col-form-label">First Name</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" name="firstName" placeholder="Firstname" required>
+            </div>
+          </div>
+    
+        <div class="row mb-3">
+            <label for="lastName" class="col-sm-2 col-form-label">Last Name</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" name="lastName" placeholder="Lastname" required>
+            </div>
+          </div>    
+
+      <div class="row mb-3">
+        <label for="email" class="col-sm-2 col-form-label">Email Address</label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control" name="email" placeholder="email@email.com" required>
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <label for="password" class="col-sm-2 col-form-label">Password</label>
+        <div class="col-sm-10">
+          <input type="password" class="form-control" name="password" required>
+        </div>
+      </div>
+
+      <div class="col-lg-12 form-btn">
+        <button class="btn btn-light">Sign Up</button>
+      </div>
+
+    </form>
+  </div>
+
+<%- include('../partials/footer.ejs')%>

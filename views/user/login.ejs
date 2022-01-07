@@ -1,0 +1,47 @@
+
+<%- include('../partials/header.ejs')%>
+<!-- <div id="form">
+<div class = "content">
+    <form action = '/users/login' method = 'POST'>
+        <table>
+            <tr>
+                <td><label for="email">Email Address</label></td>
+                <td><input type="email" id="email" name="email" class = "fixed-width" required></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password</label></td>
+                <td><input type="password" id="password" name="password" class = "fixed-width" required></td>
+            </tr>
+            
+            <tr>
+                <td colspan="2" class = "align-right"><button>Login</button></td>
+            </tr>
+        </table>        
+    </form>
+</div>
+</div> -->
+<div class="form-container login-page">
+    <form class="" action="/users/login" method="POST">
+      <div class="row mb-3">
+        <label for="email" class="col-sm-2 col-form-label">Email Address</label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control" name="email" placeholder="email@email.com" required>
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <label for="password" class="col-sm-2 col-form-label">Password</label>
+        <div class="col-sm-10">
+          <input type="password" class="form-control" name="password" placeholder="Enter your password" required>
+        </div>
+      </div>
+
+      <div class="col-lg-12 form-btn">
+        <button class="btn btn-light">Login</button>
+      </div>
+
+    </form>
+  </div>
+<%- include('../partials/footer.ejs')%>
+
+
