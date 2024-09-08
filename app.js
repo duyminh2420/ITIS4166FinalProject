@@ -14,11 +14,11 @@ const app = express();
 
 //configure app 
 let port = 3000;
-let host = 'localhost';
+let host = '127.0.0.1';
 app.set('view engine', 'ejs');
 
 //connect to database
-mongoose.connect('mongodb://localhost:27017/demos', 
+mongoose.connect('mongodb://127.0.0.1:27017/demos', 
                 {useNewUrlParser: true, useUnifiedTopology: true })
 .then(()=>{
     app.listen(port, host, ()=>{
@@ -39,7 +39,7 @@ app.use(session({
     resave: false,
     saveUninitialized: false,
     cookie:{maxAge: 60*60*1000},
-    store: new MongoStore({mongoUrl: 'mongodb://localhost:27017/demos'})
+    store: new MongoStore({mongoUrl: 'mongodb://127.0.0.1:27017/demos'})
 }));
 //use flash 
 app.use(flash());
