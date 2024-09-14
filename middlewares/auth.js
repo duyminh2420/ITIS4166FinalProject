@@ -26,7 +26,7 @@ exports.isAuthor = (req, res, next) => {
     Connection.findById(id)
     .then(connection => {
         if(connection) {
-            if(connection.author == req.session.user) {
+            if(connection.author != req.session.user) {
                 return next();
             } else {
                 let err = new Error('Unauthorized to access the resource');
@@ -44,6 +44,7 @@ exports.isNotAuthor = (req, res, next) => {
     Connection.findById(id)
     .then(connection => {
         if(connection) {
+            console.log(connection.author)
             if(connection.author != req.session.user) {
                 return next();
             } else {
