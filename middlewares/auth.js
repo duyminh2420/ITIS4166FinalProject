@@ -44,7 +44,6 @@ exports.isNotAuthor = (req, res, next) => {
     Connection.findById(id)
     .then(connection => {
         if(connection) {
-            console.log(connection.author)
             if(connection.author != req.session.user) {
                 return next();
             } else {
